@@ -187,8 +187,8 @@ function eyeSocket(posX,size,col,num) {
   line(-150,0,-130,0);
   rotate(360/num);
   }
-  if(a!=360) {if(second()===0){a+=2}}
-  if(a==360) {if(second()==59){a=0}}
+  if(second()===0) {a+=2}
+  if(second()!==0) {a=0}
   pop();
 }
 
@@ -203,8 +203,8 @@ function eyeSocketSecondary(posX,size,col,num) {
   line(-150,0,-130,0);
   rotate(360/num);
   }
-  if(a!=360) {if(second()===0){a+=3}}
-  if(a==360) {if(second()==59){a=0}}
+  if(second()===0) {a+=2}
+  if(second()!==0) {a=0}
   pop();
 }
 
